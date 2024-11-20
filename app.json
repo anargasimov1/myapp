@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "doshab",
+    "slug": "doshab",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anargasimov.doshab",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDmY0LPfs4h-hJHT4N8GlSdUomp8D8Lfnc"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b14bf3d3-ff79-425c-bbd7-f09e978f3e79"
+      }
+    }
+  }
+}
