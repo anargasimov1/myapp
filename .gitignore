@@ -3,15 +3,14 @@
 # dependencies
 node_modules/
 
-#congif
-firebaseConfig.js
-
 # Expo
 .expo/
 dist/
 web-build/
+expo-env.d.ts
 
 # Native
+.kotlin/
 *.orig.*
 *.jks
 *.p8

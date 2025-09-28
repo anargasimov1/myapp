@@ -1,38 +1,53 @@
 {
   "expo": {
-    "name": "doshab",
-    "slug": "doshab",
+    "name": "mobile",
+    "slug": "heseneskeri",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Kamera QR kodları oxumaq üçün istifadə olunur"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anargasimov.doshab",
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyDmY0LPfs4h-hJHT4N8GlSdUomp8D8Lfnc"
-        }
-      }
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.anargasimov.heseneskeri"
     },
     "web": {
       "favicon": "./assets/icon.png"
     },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      "expo-audio",
+      "expo-video"
+    ],
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
     "extra": {
       "eas": {
-        "projectId": "b14bf3d3-ff79-425c-bbd7-f09e978f3e79"
+        "projectId": "85ef0d04-26c4-4e9e-8dd0-cefed827ce03"
       }
-    }
+    },
+    "owner": "eynar12"
   }
 }
